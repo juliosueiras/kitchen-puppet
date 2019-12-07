@@ -354,6 +354,8 @@ module Kitchen
                 $MsiUrl = "https://downloads.puppetlabs.com/windows/puppet-agent-${architecture}-latest.msi"
             } elseif( '#{puppet_windows_version}' -like '5.*' ) {
                 $MsiUrl = "https://downloads.puppetlabs.com/windows/puppet5/puppet-agent-#{puppet_windows_version}-${architecture}.msi"
+            } elseif( '#{puppet_windows_version}' -like '6.*' ) {
+                $MsiUrl = "https://downloads.puppetlabs.com/windows/puppet6/puppet-agent-#{puppet_windows_version}-${architecture}.msi"
             } else {
                 $MsiUrl = "https://downloads.puppetlabs.com/windows/puppet-agent-#{puppet_windows_version}${architecture}.msi"
             }
